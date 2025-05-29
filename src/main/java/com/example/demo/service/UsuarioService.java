@@ -35,4 +35,14 @@ public class UsuarioService {
 		return null;
 	}
 
+	public void eliminarUsuarioPorId(String id) {
+		UsuarioDto usuariodto = consultarUsuarioPorId(id);
+		if (usuariodto != null) {
+			usuariosdto.remove(usuariodto);
+			System.out.println("se ha eliminado correctamente");
+		} else {
+			System.out.println("no existe un usuario con este id");
+		}
+	}
+
 }

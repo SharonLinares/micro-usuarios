@@ -6,6 +6,13 @@ public class UsuarioDto {
 	private String nombre;
 	private String apellidos;
 
+	public UsuarioDto(String id, String nombre, String apellidos) {
+		super();
+		this.id = id;
+		this.nombre = nombre;
+		this.apellidos = apellidos;
+	}
+
 	public String getId() {
 		return id;
 	}
